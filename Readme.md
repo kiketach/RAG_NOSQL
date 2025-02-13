@@ -1,36 +1,35 @@
-# MONGOATLAS
+# 🌐 MONGOATLAS
 
-## Descripción
-MONGOATLAS es una herramienta de procesamiento y consulta de documentos generados durante auditorías empresariales. Permite extraer contenido de PDFs, Word, Excel, etc., almacenarlos en MongoDB Atlas y realizar búsquedas semánticas en el contenido.
+## 📝 Descripción
+MONGOATLAS es una herramienta de procesamiento y consulta de documentos empresariales como PDFs o de ofimática. Permite extraer el contenido, almacenarlos en MongoDB Atlas y realizar búsquedas semánticas en el contenido.
 
-## Tecnologías Utilizadas
-- Python
-- Streamlit (para la interfaz de usuario)
-- MongoDB Atlas (base de datos)
-- Azure Document Intelligence (para extraer contenido de documentos)
-- OpenAI (para generar embeddings semánticos)
+## 🛠️ Tecnologías Utilizadas
+- 🐍 Python
+- 🌟 Streamlit (para la interfaz de usuario)
+- 📊 MongoDB Atlas (base de datos)
+- 🔍 Azure Document Intelligence (para extraer contenido de documentos)
+- 🧠 OpenAI (para generar embeddings semánticos)
 
-## Instalación y Configuración
+## 🔧 Instalación y Configuración
 1. Clonar el repositorio:
-   git clone [URL DEL REPOSITORIO]
+   git clone https://github.com/kiketach/RAG_NOSQL.git
 
 2. Instalar las dependencias:
     pip install -r requirements.txt
 
 3. Configurar las variables de entorno en .env
 
-## Funcionalidades
-- ETL (Extracción, Transformación, Carga): Carga de documentos y extracción de contenido para su posterior almacenamiento en MongoDB Atlas.
+## 🚀 Funcionalidades
+- 📂 ETL (Extracción, Transformación, Carga): Carga de documentos y extracción de contenido para su posterior almacenamiento en MongoDB Atlas.
+- 🔎 Consulta Semántica: Realizar búsquedas semánticas en los documentos almacenados.
+- 🗑️ Eliminar Archivo: Eliminar documentos almacenados previamente.
 
-- Consulta Semántica: Realizar búsquedas semánticas en los documentos almacenados.
-
-- Eliminar Archivo: Eliminar documentos almacenados previamente.
-
-## Uso
+## 📖 Uso
+- Iniciar la aplicación:
     Iniciar la aplicación: python app.py
     Navega a http://localhost:8501 en tu navegador para interactuar con la interfaz de usuario.
 
-## Documentación de Código
+## 📚 Documentación de Código
 - streamlit_ui.py
     procesar_etl(): Carga y procesa un documento, extrayendo su contenido y almacenándolo en MongoDB Atlas.
     realizar_consulta(): Realiza una búsqueda semántica en los documentos almacenados.
@@ -42,14 +41,13 @@ MONGOATLAS es una herramienta de procesamiento y consulta de documentos generado
     openai_utils.py: Funciones para generar embeddings semánticos con OpenAI.
     file_utils.py: Funciones para manejar archivos.
 
-## Interfaz de Usuario
+## 🖥️ Interfaz de Usuario
 La interfaz de usuario se desarrolla con Streamlit y consta de tres secciones principales:
-    ETL: Permite cargar y procesar documentos.
-    Consulta Semántica: Permite realizar consultas semánticas en los documentos almacenados.
-    Eliminar Archivo: Permite eliminar documentos almacenados previamente.
+- 📂 ETL: Permite cargar y procesar documentos.
+- 🔎 Consulta Semántica: Permite realizar consultas semánticas en los documentos almacenados.
+- 🗑️ Eliminar Archivo: Permite eliminar documentos almacenados previamente.
 
-
-
+## 📁 Estructura del Proyecto
 MONGOATLAS/
 ├── app.py                  # Archivo principal que ejecuta la aplicación
 ├── .env                    # Variables de entorno
