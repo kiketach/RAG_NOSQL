@@ -1,0 +1,40 @@
+use ("Test_Local")
+db.auditorias.find({nombre_archivo:"file.pdf"},{contenido_extraido:1})
+
+use ("Test_Local")
+db.auditorias.deleteOne({nombre_archivo: "file.pdf"})
+
+use ("auditorias")
+db.archivos.drop()
+
+use ("auditorias")
+db.archivos.find()
+
+db.getMongo()
+
+use('papeles');
+db.fs.chunks.drop()
+
+use('papeles');
+db.fs.files.drop()
+
+use('papeles');
+db.fs.files.find({}, { filename: 1, fragments: 1 }).limit(2)
+
+
+use('auditorias');
+db.getCollection('archivos').createIndex({ "$**": "text" });
+
+use('papeles');
+db.archivos.getSearchIndexes()
+
+use('papeles');
+db.archivos.findOne({}, { texto_extraido: 1 })
+
+use('papeles');
+db.archivos.findOne({}, { embedding: 1, _id: 0 })
+
+use('papeles');
+print(archivos.find_one())
+
+
